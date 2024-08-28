@@ -1,0 +1,27 @@
+{
+  "name": "artxofxwords",
+  "version": "1.0.0",
+  "description": "<!--\r **artxofxwords/artxofxwords** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artxofxwords/artxofxwords.git"
+  },
+  "author": "artxofxwords",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artxofxwords/artxofxwords/issues"
+  },
+  "homepage": "https://github.com/artxofxwords/artxofxwords#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
