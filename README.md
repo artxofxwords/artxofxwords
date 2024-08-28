@@ -1,6 +1,6 @@
 ## Welcome to my Portfolio!
 
-# artxofxwords comes from one of my favorite quotes from one of my favorite books: "Till We Have Faces" by C.S. Lewis, a book that gives mythical Orual a voice to make her case against Cupid and Psyche
+### artxofxwords comes from one of my favorite quotes from one of my favorite books: "Till We Have Faces" by C.S. Lewis, a book that gives mythical Orual a voice to make her case against Cupid and Psyche
 ## "Child, to say the very thing you really mean, the whole of it, nothing more or less or other than what you really mean; that's the whole art and joy of words."
 
 Hi🌺 My name is Amanda Brennan and I am a Jr. Software Engineer living in Georgia, USA. I work from home so I can homeschool my son and we can spend time traveling to see family, up and down the east coast and halfway around the world. We are lucky!
@@ -19,3 +19,5 @@ I love art, linguistics, teaching, volleyball, and gardening. I am learning to l
 ***
 
 # Thank you for coming!
+
+//!feedback form
