@@ -5,7 +5,7 @@
 
 Hi🌺 My name is Amanda Brennan and I am a Jr. Software Engineer living in Georgia, USA. I work from home so I can homeschool my son and we can spend time traveling to see family, up and down the east coast and halfway around the world. We are lucky!
 
-I love art, linguistics, teaching, volleyball, and gardening. I am learning to love project architecture, documentation, and staying hydrated. I am struggling to love research, networking, and office hours.
+I love art, linguistics, teaching, volleyball, and gardening. I am learning to love project setup/ architecture, reading documentation, and staying hydrated. I am struggling to love doing research, networking events, and the possibility of being required to work with a Mac for a job.
 
 ***
 
@@ -19,5 +19,3 @@ I love art, linguistics, teaching, volleyball, and gardening. I am learning to l
 ***
 
 # Thank you for coming!
-
-//!feedback form
