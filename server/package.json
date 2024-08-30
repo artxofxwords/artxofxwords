@@ -1,7 +1,7 @@
 {
   "name": "artxofxwords",
   "version": "1.0.0",
-  "description": "<!--\r **artxofxwords/artxofxwords** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "description": "<!--\r ✨ **artxofxwords/artxofxwords** ✨ ",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
