@@ -48,6 +48,7 @@ function ModalExampleDimmer() {
           backgroundColor: "#CCf0f0",
           borderRadius: "8px",
           height: "6vh",
+          cursor: "pointer"
         }}
       >
       <p style={{fontFamily: "cursive"}}>&quot;Hi there&quot;🌺</p>
@@ -71,7 +72,8 @@ function ModalExampleDimmer() {
               color:"#000000",
               backgroundColor: "#CCf0f0",
               borderRadius: "8px",
-              marginRight: "4px"
+              marginRight: "4px",
+              cursor: "pointer"
             }}>
             ❌I&apos;d rather not...
           </Button>
@@ -80,7 +82,8 @@ function ModalExampleDimmer() {
               color:"#000000",
               backgroundColor: "#CCf0f0",
               borderRadius: "8px",
-              marginRight: "4px"
+              marginRight: "4px",
+              cursor: "pointer"
             }}>
             ✔Okay, I will!
           </Button>

@@ -14,6 +14,7 @@ export default function Nav() {
           border: "solid white",
           borderRadius: "8px",
           height: "7vh",
+          cursor: "pointer"
         }}
       >
         <p style={{ fontFamily: "cursive" }}>PROJECT 1 🧁</p>
@@ -28,6 +29,7 @@ export default function Nav() {
           border: "solid white",
           borderRadius: "8px",
           height: "7vh",
+          cursor: "pointer"
         }}
       >
         <p style={{ fontFamily: "cursive" }}>PROJECT 2 🌸</p>
@@ -42,6 +44,7 @@ export default function Nav() {
           border: "solid white",
           borderRadius: "8px",
           height: "7vh",
+          cursor: "pointer"
         }}
       >
         <p style={{ fontFamily: "cursive" }}>PROJECT 3 🍉</p>
@@ -56,6 +59,7 @@ export default function Nav() {
           border: "solid white",
           borderRadius: "8px",
           height: "7vh",
+          cursor: "pointer"
         }}
       >
         <p style={{ fontFamily: "cursive" }}>PROJECT 4 🎈</p>

@@ -13,11 +13,11 @@ export default function ThemedHeader() {
 
   useEffect(() => {
     if (nameForm === false) {
-    setEditButton(true);
-  } else {
-    setEditButton(false);
-    setTimeout(() => setNameForm(false), 5000);
-  }
+      setEditButton(true);
+    } else {
+      setEditButton(false);
+      setTimeout(() => setNameForm(false), 5000);
+    }
   }, [nameForm]);
 
   return (
@@ -74,7 +74,15 @@ export default function ThemedHeader() {
             </form>
           )}{" "}
           {editButton && (
-            <Button onClick={() => setNameForm(true)} style={{border: "0px", backgroundColor: "transparent"}}><img src={editIcon} width="15px" height="15px" /></Button>
+            <Button
+              onClick={() => setNameForm(true)}
+              style={{
+                border: "0px",
+                backgroundColor: "transparent",
+              }}
+            >
+              <img src={editIcon} width="15px" height="15px" />
+            </Button>
           )}
         </h1>
         <Nav />
