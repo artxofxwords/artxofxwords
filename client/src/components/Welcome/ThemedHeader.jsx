@@ -5,8 +5,11 @@ import editIcon from "../../assets/editIcon.png";
 import Nav from "../Nav/Nav";
 import { useState, useEffect } from "react";
 import { Button } from "semantic-ui-react";
+import { useNavigate } from "react-router-dom";
 
 export default function ThemedHeader() {
+  const navigate = useNavigate();
+
   const [guestName, setGuestName] = useState();
   const [nameForm, setNameForm] = useState(false);
   const [editButton, setEditButton] = useState(true);
@@ -30,11 +33,11 @@ export default function ThemedHeader() {
       >
         <img
           src={headerBackground}
-          style={{ display: "flex", width: "39vw", height: "25vh" }}
+          style={{ display: "flex", width: "45vw", height: "20vh" }}
         />
         <img
           src={SunrisePalette}
-          style={{ display: "flex", width: "60vw", height: "25vh" }}
+          style={{ display: "flex", width: "55vw", height: "20vh" }}
         />
       </div>
 
@@ -50,10 +53,10 @@ export default function ThemedHeader() {
         <h1
           style={{
             display: "flex",
-            fontFamily: "cursive",
+            width: "85vw",
             color: "white",
             fontSize: "2.3em",
-            textShadow: "1px 1px 2px #f4d2c8",
+            textShadow: "1px 1px 2px #f4d2c8"
           }}
         >
           HELLO {guestName}{" "}
@@ -66,9 +69,9 @@ export default function ThemedHeader() {
                 value={guestName}
                 onChange={(e) => setGuestName(e.target.value)}
                 style={{
-                  height: "30px",
+                  width: "13vw",
                   borderRadius: "8px",
-                  marginLeft: "10px",
+                  marginLeft: "10px"
                 }}
               />
             </form>
@@ -86,7 +89,7 @@ export default function ThemedHeader() {
           )}
         </h1>
         <Nav />
-        <img src={ThemeRound} style={{ width: "110px", height: "110px" }}></img>
+        <img src={ThemeRound} style={{ width: "100px", height: "100px" }} onClick={() => {navigate("/")}}></img>
       </div>
     </div>
   );

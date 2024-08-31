@@ -2,6 +2,7 @@
 @media only screen and (max-width: 600px) {
     body {
         font-size: 0.5rem;
+        font-family: Copperplate, Papyrus, fantasy;
     }
 
     div {
@@ -13,6 +14,7 @@
 @media only screen and (min-width: 600px) {
     body {
         font-size: 0.5rem;
+        font-family: Copperplate, Papyrus, fantasy;
     }
 
     div {
@@ -24,6 +26,7 @@
 @media only screen and (min-width: 768px) {
     body {
         font-size: 0.5rem;
+        font-family: Copperplate, Papyrus, fantasy;
     }
 }
 
@@ -31,6 +34,7 @@
 @media only screen and (min-width: 992px) {
     body {
         font-size: 1em;
+        font-family: Copperplate, Papyrus, fantasy;
     }
 }
 
@@ -38,5 +42,6 @@
 @media only screen and (min-width: 1200px) {
     body {
         font-size: 1em;
+        font-family: Copperplate, Papyrus, fantasy;
     }
 }
