@@ -1,15 +1,27 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import { useState, useEffect } from "react";
+import { Button } from "semantic-ui-react";
+import { useNavigate } from "react-router-dom";
 import headerBackground from "../../assets/sunriseSkyHeader.png";
 import SunrisePalette from "../../assets/SunriseSkyScheme.png";
 import ThemeRound from "../../../favicon.ico";
 import editIcon from "../../assets/editIcon.png";
 import Nav from "../Nav/Nav";
-import { useState, useEffect } from "react";
-import { Button } from "semantic-ui-react";
-import { useNavigate } from "react-router-dom";
 
 export default function ThemedHeader() {
   const navigate = useNavigate();
 
+  //responsive design using react-responsive
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+  // const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+
+  //for welcome by input name
   const [guestName, setGuestName] = useState();
   const [nameForm, setNameForm] = useState(false);
   const [editButton, setEditButton] = useState(true);
@@ -20,77 +32,169 @@ export default function ThemedHeader() {
     } else {
       setEditButton(false);
       setTimeout(() => setNameForm(false), 5000);
+      stashGuestName();
     }
   }, [nameForm]);
 
+  function stashGuestName () {
+    localStorage.removeItem("guestName");
+
+    setTimeout(() => localStorage.setItem("guestName", guestName), 10000);
+  }
+
   return (
     <div style={{ display: "inline-flex", flexDirection: "column" }}>
-      <div
-        style={{
-          display: "inline-flex",
-          flexDirection: "row",
-        }}
-      >
-        <img
-          src={headerBackground}
-          style={{ display: "flex", width: "45vw", height: "20vh" }}
-        />
-        <img
-          src={SunrisePalette}
-          style={{ display: "flex", width: "55vw", height: "20vh" }}
-        />
-      </div>
+      {(isDesktopOrLaptop || isBigScreen) && (
+        <>
+          <div
+            style={{
+              display: "inline-flex",
+              flexDirection: "row",
+            }}
+          >
+            <img
+              src={headerBackground}
+              style={{ display: "flex", width: "45vw", height: "20vh" }}
+            />
+            <img
+              src={SunrisePalette}
+              style={{ display: "flex", width: "55vw", height: "20vh" }}
+            />
+          </div>
 
-      <div
-        style={{
-          display: "inline-flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          backgroundColor: "#ccf0f0",
-          padding: "15px",
-        }}
-      >
-        <h1
-          style={{
-            display: "flex",
-            width: "85vw",
-            color: "white",
-            fontSize: "2.3em",
-            textShadow: "1px 1px 2px #f4d2c8"
-          }}
-        >
-          HELLO {guestName}{" "}
-          {nameForm && (
-            <form>
-              <input
-                type="text"
-                id="guestName"
-                placeholder="name"
-                value={guestName}
-                onChange={(e) => setGuestName(e.target.value)}
-                style={{
-                  width: "13vw",
-                  borderRadius: "8px",
-                  marginLeft: "10px"
-                }}
-              />
-            </form>
-          )}{" "}
-          {editButton && (
-            <Button
-              onClick={() => setNameForm(true)}
+          <div
+            style={{
+              display: "inline-flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              backgroundColor: "#ccf0f0",
+              padding: "15px",
+            }}
+          >
+            <h1
               style={{
-                border: "0px",
-                backgroundColor: "transparent",
+                display: "flex",
+                width: "85vw",
+                color: "white",
+                fontSize: "3em",
+                textShadow: "1px 1px 2px #f4d2c8",
               }}
             >
-              <img src={editIcon} width="15px" height="15px" />
-            </Button>
-          )}
-        </h1>
-        <Nav />
-        <img src={ThemeRound} style={{ width: "100px", height: "100px" }} onClick={() => {navigate("/")}}></img>
-      </div>
+              HELLO {guestName}{" "}
+              {nameForm && (
+                <form>
+                  <input
+                    type="text"
+                    id="guestName"
+                    placeholder="name"
+                    value={guestName}
+                    onChange={(e) => setGuestName(e.target.value)}
+                    style={{
+                      width: "13vw",
+                      borderRadius: "8px",
+                      border: "0px",
+                      marginLeft: "10px"
+                    }}
+                  />
+                </form>
+              )}{" "}
+              {editButton && (
+                <Button
+                  onClick={() => setNameForm(true)}
+                  style={{
+                    border: "0px",
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  <img src={editIcon} width="15px" height="15px" />
+                </Button>
+              )}
+            </h1>
+            <Nav />
+            <img
+              src={ThemeRound}
+              style={{ width: "100px", height: "100px" }}
+              onClick={() => {
+                navigate("/");
+              }}
+            ></img>
+          </div>
+        </>
+      )}
+
+      {(isTabletOrMobile || isPortrait) && (
+        <>
+          <div
+            style={{
+              display: "inline-flex",
+              flexDirection: "row",
+            }}
+          >
+            <img
+              src={headerBackground}
+              style={{ display: "flex", width: "45vw", height: "8vh" }}
+            />
+            <img
+              src={SunrisePalette}
+              style={{ display: "flex", width: "55vw", height: "8vh" }}
+            />
+          </div>
+
+          <div
+            style={{
+              display: "inline-flex",
+              flexDirection: "column",
+              justifyItems: "center",
+              backgroundColor: "#ccf0f0",
+              padding: "15px",
+            }}
+          >
+            <h1
+              style={{
+                display: "flex",
+                width: "screen",
+                color: "white",
+                fontSize: "1.2em",
+                textShadow: "1px 1px 2px #f4d2c8",
+              }}
+            >
+              HELLO {guestName}{" "}
+              {nameForm && (
+                <form>
+                  <input
+                    type="text"
+                    id="guestName"
+                    placeholder="name"
+                    value={guestName}
+                    onChange={(e) => setGuestName(e.target.value)}
+                    style={{
+                      width: "15vw",
+                      borderRadius: "8px",
+                      marginLeft: "10px",
+                      backgroundColor: "#ccf0f0",
+                    }}
+                  />
+                </form>
+              )}{" "}
+              {editButton && (
+                <Button
+                  onClick={() => setNameForm(true)}
+                  style={{
+                    display: "flex",
+                    border: "0px",
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  <img src={editIcon} width="15px" height="15px" />
+                </Button>
+              )}
+            </h1>
+            <Nav />
+          </div>
+        </>
+      )}
+
     </div>
   );
 }

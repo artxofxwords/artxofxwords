@@ -3,8 +3,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-import Route from "./routes/Route.js";
-import 'semantic-ui-css/semantic.min.css';
+const feedbackRoute = require("./routes/feedbackRoute.js");
+// const SemanticUI = require('semantic-ui-css/semantic.min.css');
 
 const app = express();
 app.use(express.json());
@@ -19,7 +19,7 @@ db.once("open", () => {
     console.log("Connected to database.");
 });
 
-app.use("/test", Route);
+app.use("/feedback", feedbackRoute);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
