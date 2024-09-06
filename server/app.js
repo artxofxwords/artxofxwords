@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(`mongodb+srv://amandab:Atn!AS2024@portfoliofeedback.me0jj.mongodb.net/PORTFOLIOFEEDBACK`);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "Connection Error."));
