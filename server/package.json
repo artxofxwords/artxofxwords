@@ -1,5 +1,5 @@
 {
-  "name": "artxofxwords",
+  "name": "server",
   "version": "1.0.0",
   "description": "<!--\r ✨ **artxofxwords/artxofxwords** ✨ ",
   "main": "app.js",
@@ -13,9 +13,6 @@
   },
   "author": "artxofxwords",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artxofxwords/artxofxwords/issues"
-  },
   "homepage": "https://github.com/artxofxwords/artxofxwords#readme",
   "dependencies": {
     "cors": "^2.8.5",
