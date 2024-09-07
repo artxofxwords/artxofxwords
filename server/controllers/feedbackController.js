@@ -37,5 +37,6 @@ exports.newFeedback = async (req, res) => {
 }
 
 } catch (err) {
+    console.log(err);
     res.status(501).json("Internal Server Error");
 }
