@@ -41,7 +41,7 @@ export default function FeedbackForm() {
     };
     console.log("body for post feedback", body);
 
-    const response = await fetch(`https://artxofxwords-portfolio.onrender.com/feedback/newFeedback`, {
+    const response = await fetch(`https://portfolio-hbf7.onrender.com/feedback/newFeedback`, {
       method: "POST",
       body: JSON.stringify(body),
       headers: {
