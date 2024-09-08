@@ -18,6 +18,7 @@ const corsOptions = {
 
 //app.use(cors());
 app.use(cors(corsOptions));
+app.use("/feedback", feedbackRoute);
 
 mongoose.connect(process.env.MONGO_URI);
 
@@ -26,8 +27,6 @@ db.on("error", console.error.bind(console, "Connection Error."));
 db.once("open", () => {
     console.log("Connected to database.");
 });
-
-app.use("/feedback", feedbackRoute);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
