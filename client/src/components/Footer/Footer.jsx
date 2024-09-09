@@ -1,4 +1,4 @@
-// import FeedbackForm from "./FeedbackForm"
+import FeedbackForm from "./FeedbackForm"
 
 export default function Footer() {
 
@@ -6,7 +6,7 @@ export default function Footer() {
         <div style={{
             backgroundColor: "#ccf0f0"
         }}>
-            {/* <FeedbackForm /> */}
+            <FeedbackForm />
         </div>
     )
 }
