@@ -5,13 +5,16 @@ import Project2 from "./components/Project2/Project2";
 import Project3 from "./components/Project3/Project3";
 import Project4 from "./components/Project4/Project4";
 import Project5 from "./components/Project5/Project5";
-import './App.css'
+import './App.css';
+
+import {ContextProvider} from "./components/Context/Context";
 
 function App() {
   
 
   return (
     <>
+      <ContextProvider>
       <BrowserRouter>
       <Routes>
           <Route path="/" element={<Welcome />} />
@@ -22,6 +25,7 @@ function App() {
           <Route path="/project5" element={<Project5 />} />
       </Routes>
       </BrowserRouter>
+      </ContextProvider>
     </>
   )
 }

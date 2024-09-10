@@ -14,7 +14,12 @@ export default function Nav() {
 
   return (
     <div
-      style={{ display: "inline-flex", flexDirection: "row", columnGap: "3px", flexWrap:"wrap" }}
+      style={{
+        display: "inline-flex",
+        flexDirection: "row",
+        columnGap: "3px",
+        flexWrap: "wrap",
+      }}
     >
       {(isDesktopOrLaptop || isBigScreen) && (
         <>
@@ -95,7 +100,7 @@ export default function Nav() {
             as={Link}
             to="/project5"
           >
-            <p>PROJ 5 🎀</p>
+            <p>CV | RESUME 🎀</p>
           </Button>
         </>
       )}
@@ -179,11 +184,10 @@ export default function Nav() {
             as={Link}
             to="/project5"
           >
-            <p style={{ fontSize: "0.5em" }}>PROJ 5 🎀</p>
+            <p style={{ fontSize: "0.5em" }}>CV | RESUME 🎀</p>
           </Button>
         </>
       )}
-
     </div>
   );
 }

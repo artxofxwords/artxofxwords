@@ -2,17 +2,20 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Button } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 import headerBackground from "../../assets/sunriseSkyHeader.png";
 import SunrisePalette from "../../assets/SunriseSkyScheme.png";
 import ThemeRound from "../../../favicon.ico";
+import HomeButton from "../../assets/circleHomeButton.png";
 import editIcon from "../../assets/editIcon.png";
 import Nav from "../Nav/Nav";
+import CTX from "../Context/Context";
 
 export default function ThemedHeader() {
   const navigate = useNavigate();
+  const CONTEXT = useContext(CTX);
 
   //responsive design using react-responsive
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
@@ -22,7 +25,7 @@ export default function ThemedHeader() {
   // const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
   //for welcome by input name
-  const [guestName, setGuestName] = useState();
+  const [guestName, setGuestName] = useState(localStorage.getItem("guestName"));
   const [nameForm, setNameForm] = useState(false);
   const [editButton, setEditButton] = useState(true);
 
@@ -36,10 +39,11 @@ export default function ThemedHeader() {
     }
   }, [nameForm]);
 
-  function stashGuestName () {
+  function stashGuestName() {
     localStorage.removeItem("guestName");
 
     setTimeout(() => localStorage.setItem("guestName", guestName), 10000);
+    setTimeout(() => localStorage.removeItem("guestName"), 300000);
   }
 
   return (
@@ -69,7 +73,7 @@ export default function ThemedHeader() {
               justifyContent: "space-between",
               alignItems: "center",
               backgroundColor: "#ccf0f0",
-              padding: "15px",
+              padding: "10px",
             }}
           >
             <h1
@@ -94,7 +98,7 @@ export default function ThemedHeader() {
                       width: "13vw",
                       borderRadius: "8px",
                       border: "0px",
-                      marginLeft: "10px"
+                      marginLeft: "10px",
                     }}
                   />
                 </form>
@@ -112,13 +116,20 @@ export default function ThemedHeader() {
               )}
             </h1>
             <Nav />
-            <img
-              src={ThemeRound}
-              style={{ width: "100px", height: "100px" }}
+            <Button
               onClick={() => {
                 navigate("/");
               }}
-            ></img>
+              style={{
+                border: "0px",
+                backgroundColor: "transparent",
+              }}
+            >
+              <img
+                src={HomeButton}
+                style={{ width: "60px", height: "60px" }}
+              ></img>
+            </Button>
           </div>
         </>
       )}
@@ -191,10 +202,23 @@ export default function ThemedHeader() {
               )}
             </h1>
             <Nav />
+            <Button
+              onClick={() => {
+                navigate("/");
+              }}
+              style={{
+                border: "0px",
+                backgroundColor: "transparent",
+              }}
+            >
+              <img
+                src={HomeButton}
+                style={{ width: "30px", height: "30px" }}
+              ></img>
+            </Button>
           </div>
         </>
       )}
-
     </div>
   );
 }
