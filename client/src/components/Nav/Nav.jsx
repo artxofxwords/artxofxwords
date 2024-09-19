@@ -36,7 +36,7 @@ export default function Nav() {
             as={Link}
             to="/project1"
           >
-            <p>PROJ 1 🧁</p>
+            <p>FIRST (HTML | CSS) 🧁</p>
           </Button>
 
           <Button

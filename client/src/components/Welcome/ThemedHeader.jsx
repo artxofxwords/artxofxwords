@@ -42,8 +42,8 @@ export default function ThemedHeader() {
   function stashGuestName() {
     localStorage.removeItem("guestName");
 
-    setTimeout(() => localStorage.setItem("guestName", guestName), 10000);
-    setTimeout(() => localStorage.removeItem("guestName"), 300000);
+    setTimeout(() => localStorage.setItem("guestName", guestName), 5000);
+    setTimeout(() => localStorage.removeItem("guestName"), 100000);
   }
 
   return (

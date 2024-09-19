@@ -1,6 +1,7 @@
 // import {useState} from "react";
 import ThemedHeader from "../Welcome/ThemedHeader";
 import BootcampCertModal from "./BootcampCertModal";
+import Badges from "./Badges";
 import Footer from "../Footer/Footer";
 
 export default function Project5() {
@@ -113,6 +114,9 @@ export default function Project5() {
           </p>
         </div>
       </div>
+
+      <Badges />
+      
       <Footer />
     </>
   );
