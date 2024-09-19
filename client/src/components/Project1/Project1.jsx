@@ -29,10 +29,10 @@ export default function Project1() {
                 This project was my very first ever creating <i>something from nothing</i> with HTML & CSS. I used <a target="_blank" href="https://codepen.io/artxofxwords/pen/OJGMWov">CodePen</a> and I was so proud of it! 
             </h2>
             <h4>
-                Apologies to mobile users, this page is rough! I was far from responsive design at this point! Lots of margins and padding by pixels! 😅
+                Apologies to mobile users, this page is rough. I was far from responsive design at this point! Lots of margins and padding by pixels 😅
             </h4>
             <h5>
-                Deliverables: A bio page in html, answering questions about myself and my likes. A CSS file to style my page.
+                <span style={{color: "#d97271"}}>Deliverables:</span> A bio page in html, answering questions about myself and my likes. A CSS file to style my page.
             </h5>
         <div style={{
             borderTop: "1px dotted #d97271",
