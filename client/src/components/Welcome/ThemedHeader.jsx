@@ -47,7 +47,7 @@ export default function ThemedHeader() {
   }
 
   return (
-    <div style={{ display: "inline-flex", flexDirection: "column" }}>
+    <div style={{ display: "inline-flex", flexDirection: "column", backgroundColor: "#ccf0f0" }}>
       {(isDesktopOrLaptop || isBigScreen) && (
         <>
           <div
@@ -72,7 +72,7 @@ export default function ThemedHeader() {
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              backgroundColor: "#ccf0f0",
+              // backgroundColor: "#ccf0f0",
               padding: "10px",
             }}
           >
@@ -115,6 +115,7 @@ export default function ThemedHeader() {
                 </Button>
               )}
             </h1>
+            </div>
             <Nav />
             <Button
               onClick={() => {
@@ -130,7 +131,6 @@ export default function ThemedHeader() {
                 style={{ width: "60px", height: "60px" }}
               ></img>
             </Button>
-          </div>
         </>
       )}
 

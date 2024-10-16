@@ -120,7 +120,7 @@ export default function Nav() {
             as={Link}
             to="/project1"
           >
-            <p style={{ fontSize: "0.5em" }}>PROJ 1 🧁</p>
+            <p style={{ fontSize: "0.5em" }}>FIRST (HTML | CSS) 🧁</p>
           </Button>
 
           <Button
