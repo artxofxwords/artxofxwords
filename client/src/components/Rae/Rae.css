@@ -1,0 +1,89 @@
+
+@font-face {
+  font-family: OldeEnglish;
+  src: url('../../assets/fonts/OldeEnglish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: KnightsQuest;
+  src: url('../../assets/fonts/KnightsQuest.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div {
+    background-color: #d3d3d3;
+    margin: 0;
+}
+
+image {
+    margin: 0;
+    position: relative;
+    background-image: url(../../assets/knight.jpg);
+    background-position: center;
+    width: 50%;
+    height: 90%;
+    opacity: 80%;
+    color: transparent;
+}
+
+.lilies {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    background-image: url(../../assets/lilies.jpg);
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+    color: transparent;
+    opacity: 60%;
+    text-align: center;
+}
+
+.lily {
+    z-index: 2;
+    position: absolute;
+    background-image: url(../../assets/LilyTrBkgd.png);
+    width: 50%;
+    height: 105%;
+    color: transparent;
+    opacity: 60%;
+}
+
+.knight {
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    color: silver;
+    font-family: KnightsQuest;
+    font-size: 5.5em;
+    text-align: right;
+    line-height: 40px;
+    padding: 20px 0px 0px 0px;
+}
+
+.palette {
+    margin: 0;
+    background-image: url(../../assets/Knight.png);
+    background-position: top;
+    background-size: contain;
+    color: transparent;
+    width: 50%;
+    height: 90%;
+    opacity: 75%;
+}
+
+.verse {
+    margin: 0;
+    background-color: #d3d3d3;
+    color: #b98389;
+    font-family: OldeEnglish;
+    font-size: 3.2em;
+    text-align: center;
+    line-height: 34px;
+    padding: 0px 0px 20px 0px;
+}
+
