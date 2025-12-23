@@ -7,23 +7,60 @@ export default function Rae () {
         <div>
             <header>
                 <div className='knight'>
-                    Put on the armor of God
-                <br />
-                    &
-                <br />
-                    Enter His rest
+                    Put on the armor of God & Enter His rest
+                
+                <p style={{
+                    fontFamily: "OldeEnglish",
+                    fontSize: "2rem",
+                    color: "#5e855f",
+                    textAlign: "right",
+                    marginRight: "20px",
+                    marginTop: "15px",
+                    textDecoration: "bold"
+                }}>
+                    Ephesians 6
+                </p>
+                </div>
+                <div style={{
+                    marginTop: "25vh",
+                    justifyContent: "center",
+                    display: "flex",
+                    flexDirection: "row",
+                    columnGap: "20px",
+                    position: "absolute",
+                    zIndex: "2"
+                }}>
+                    <button style={{
+                        fontFamily: "KnightsQuest",
+                        fontSize: "2.5em"
+                    }}>
+                        Art
+                    </button>
+                    <button style={{
+                        fontFamily: "KnightsQuest",
+                        fontSize: "2.5em"
+                    }}>
+                        Blog
+                    </button>
+                    <button style={{
+                        fontFamily: "KnightsQuest",
+                        fontSize: "2.5em"
+                    }}>
+                        Contact
+                    </button>
+
                 </div>
                 
                 <p className='knight'>
                 </p>
 
-                <div className='lilies' 
+                <div className='solid' 
                 style={{
                     width: "100vw",
                     height: "30vh"
                     }}>
                     <p>
-                        Lilies
+                        
                     </p>
 
                 </div>
@@ -39,9 +76,6 @@ export default function Rae () {
 
                         <div className='palette'>
                             Palette
-                            <p className='lily'>
-                                Lily
-                            </p>
                         </div>
 
                 </div>
@@ -49,7 +83,11 @@ export default function Rae () {
                     &apos;&apos; Consider the lilies of the field, how they grow; 
                     they toil not, neither do they spin: And yet I say unto you, 
                     That even Solomon in all his glory was not arrayed like one of these. &apos;&apos;
+                    <p className='lily'>
+                        Lily
+                    </p>
                 </div>
+
                 
             </header>
         </div>
