@@ -1,5 +1,6 @@
 import '../Rae/Rae.css';
 
+
 export default function Rae () {
 
 
@@ -12,7 +13,7 @@ export default function Rae () {
                 <p style={{
                     fontFamily: "OldeEnglish",
                     fontSize: "2rem",
-                    color: "#5e855f",
+                    color: "#b98389",
                     textAlign: "right",
                     marginRight: "20px",
                     marginTop: "15px",
@@ -22,39 +23,40 @@ export default function Rae () {
                 </p>
                 </div>
                 <div style={{
-                    marginTop: "25vh",
+                    marginTop: "22vh",
                     justifyContent: "center",
                     display: "flex",
                     flexDirection: "row",
-                    columnGap: "20px",
+                    columnGap: "52px",
                     position: "absolute",
-                    zIndex: "2"
+                    zIndex: "2",
+                    backgroundColor: "transparent"
                 }}>
-                    <button style={{
+                    <a href='/art'><button style={{
                         fontFamily: "KnightsQuest",
                         fontSize: "2.5em"
                     }}>
                         Art
-                    </button>
-                    <button style={{
+                    </button></a>
+                    <a href='/blog'><button style={{
                         fontFamily: "KnightsQuest",
                         fontSize: "2.5em"
                     }}>
                         Blog
-                    </button>
-                    <button style={{
+                    </button></a>
+                    <a href='/contact'><button style={{
                         fontFamily: "KnightsQuest",
                         fontSize: "2.5em"
                     }}>
                         Contact
-                    </button>
+                    </button></a>
 
                 </div>
                 
                 <p className='knight'>
                 </p>
 
-                <div className='solid' 
+                <div className='solo' 
                 style={{
                     width: "100vw",
                     height: "30vh"
@@ -66,27 +68,14 @@ export default function Rae () {
                 </div>
 
                 <div style={{
-                    display: "flex",
-                    flexDirection: "row",
                     height: "90vh"
                 }}>
                     <image>
                     Knight
                     </image>
-
-                        <div className='palette'>
-                            Palette
-                        </div>
-
                 </div>
-                <div className='verse'>
-                    &apos;&apos; Consider the lilies of the field, how they grow; 
-                    they toil not, neither do they spin: And yet I say unto you, 
-                    That even Solomon in all his glory was not arrayed like one of these. &apos;&apos;
-                    <p className='lily'>
-                        Lily
-                    </p>
-                </div>
+
+                
 
                 
             </header>

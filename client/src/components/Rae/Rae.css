@@ -31,17 +31,17 @@ button {
 
 image {
     margin: 0;
-    position: relative;
-    background-image: url(../../assets/knight.jpg);
+    position: absolute;
+    background-image: url(../../assets/ArmorUnsplash.jpg);
     background-position: center;
-    width: 50%;
+    width: 100%;
     height: 90%;
-    opacity: 100%;
     color: transparent;
 }
 
-.solid {
-    background-color: #4d1a20;
+.solo {
+    background-image: url(../../assets/FieldUnsplash.jpg);
+    background-position: top;
     margin: 0;
     z-index: 1;
     height: 30vh;
@@ -65,23 +65,12 @@ image {
     text-align: center;
 }
 
-.lily {
-    z-index: 2;
-    position: absolute;
-    background-image: url(../../assets/LilyTrBkgd.png);
-    background-color: #d3d3d3;
-    width: 100%;
-    height: 85%;
-    color: transparent;
-    opacity: 100%;
-}
-
 .knight {
     margin-top: 20px;
     position: absolute;
     z-index: 2;
     background-color: transparent;
-    color: silver;
+    color: #4d1a20;
     font-family: KnightsQuest;
     font-size: 5.5em;
     text-align: center;
@@ -99,15 +88,3 @@ image {
     height: 90%;
     opacity: 100%;
 }
-
-.verse {
-    margin: 0;
-    background-color: #d3d3d3;
-    color: #b98389;
-    font-family: OldeEnglish;
-    font-size: 3.2em;
-    text-align: center;
-    line-height: 34px;
-    padding: 0px 0px 20px 0px;
-}
-

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: OldeEnglish;
+  src: url('../../../assets/fonts/OldeEnglish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: KnightsQuest;
+  src: url('../../../assets/fonts/KnightsQuest.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
