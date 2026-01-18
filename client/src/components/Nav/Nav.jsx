@@ -36,7 +36,7 @@ export default function Nav() {
             as={Link}
             to="/project1"
           >
-            <p>FIRST (HTML | CSS) 🧁</p>
+            <p>Photography 🧁</p>
           </Button>
 
           <Button
@@ -52,7 +52,7 @@ export default function Nav() {
             as={Link}
             to="/project2"
           >
-            <p>PROJ 2 🌸</p>
+            <p>Graphic Design 🌸</p>
           </Button>
 
           <Button
@@ -68,7 +68,7 @@ export default function Nav() {
             as={Link}
             to="/project3"
           >
-            <p>PROJ 3 🍉</p>
+            <p>Web Development 🍉</p>
           </Button>
 
           <Button
@@ -84,7 +84,7 @@ export default function Nav() {
             as={Link}
             to="/project4"
           >
-            <p>PROJ 4 🎈</p>
+            <p>Digital Products 🎈</p>
           </Button>
 
           <Button
@@ -120,7 +120,7 @@ export default function Nav() {
             as={Link}
             to="/project1"
           >
-            <p style={{ fontSize: "0.5em" }}>FIRST (HTML | CSS) 🧁</p>
+            <p style={{ fontSize: "0.5em" }}>Photography 🧁</p>
           </Button>
 
           <Button
@@ -136,7 +136,7 @@ export default function Nav() {
             as={Link}
             to="/project2"
           >
-            <p style={{ fontSize: "0.5em" }}>PROJ 2 🌸</p>
+            <p style={{ fontSize: "0.5em" }}>Graphic Design 🌸</p>
           </Button>
 
           <Button
@@ -152,7 +152,7 @@ export default function Nav() {
             as={Link}
             to="/project3"
           >
-            <p style={{ fontSize: "0.5em" }}>PROJ 3 🍉</p>
+            <p style={{ fontSize: "0.5em" }}>Web Development 🍉</p>
           </Button>
 
           <Button
@@ -168,7 +168,7 @@ export default function Nav() {
             as={Link}
             to="/project4"
           >
-            <p style={{ fontSize: "0.5em" }}>PROJ 4 🎈</p>
+            <p style={{ fontSize: "0.5em" }}>Digital Products 🎈</p>
           </Button>
 
           <Button

@@ -132,10 +132,7 @@ export default function Intro() {
                 >
                   Reliable
                 </span>
-                <br />I have always given advance notice of sick days, lateness,
-                and resignation to employers. I do not bring personal business
-                into work, and nothing in my personal life has ever impeded my
-                ability to fulfill my responsibilities. When I agree to do
+                <br />When I agree to do
                 something, I do it. I can be counted on to do mundane,
                 repetitive tasks or fast-paced, challenging tasks, as long as I
                 am properly briefed on expectations.
@@ -151,10 +148,9 @@ export default function Intro() {
                 >
                   A Team Player
                 </span>
-                <br />I grew up playing sports, volleyball was my favorite. I
-                coached HS girls volleyball for five seasons. I went on group
-                work trips, service trips (after Katrina), and community
-                development trips (East Africa), and for all of these
+                <br />I grew up playing volleyball and later
+                coached a HS girls team for five seasons. I went on short
+                term group service trips many times, and for all of these
                 experiences I was flexible and willing to take on what was
                 needed for the group to succeed. I do not participate in harmful
                 workplace gossip, favoritism, or any kind of dishonesty that

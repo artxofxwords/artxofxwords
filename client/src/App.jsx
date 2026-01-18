@@ -6,10 +6,6 @@ import Project3 from "./components/Project3/Project3";
 import Project4 from "./components/Project4/Project4";
 import Project5 from "./components/Project5/Project5";
 import SecretSanta from "./components/SecretSanta/SecretSanta";
-import Rae from "./components/Rae/Rae";
-import Art from "./components/Rae/Art/Art";
-import Blog from "./components/Rae/Blog/Blog";
-import Contact from "./components/Rae/Contact/Contact";
 import './App.css';
 
 import {ContextProvider} from "./components/Context/Context";
@@ -29,10 +25,6 @@ function App() {
           <Route path="/project4" element={<Project4 />} />
           <Route path="/project5" element={<Project5 />} />
           <Route path="/secretsanta" element={<SecretSanta />} />
-          <Route path="/rae" element={<Rae />} />
-          <Route path="/art" element={<Art />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
       </Routes>
       </BrowserRouter>
       </ContextProvider>
