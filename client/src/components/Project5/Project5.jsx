@@ -28,51 +28,26 @@ export default function Project5() {
           }}
         >
           <h1>Curriculum Vitae</h1>
-          <p>
-            <a href="https://www.uprighted.com/">Upright Education</a> -{" "}
-            <b>Capstone Portal</b> - Single Page Application, Role-Based Access,
-            Database
-          </p>
+          <h2>
+            Skills
+          </h2>
           <p>
             <ul>
-              <li>
-                Markets capstone sponsorship program for various tech bootcamps
-              </li>
-              <li>
-                User registration to submit proposals for sponsorship projects
-              </li>
-              <li>User login to view proposal submission status</li>
-              <li>
-                Admin control panel with full CRUD functionality of users &
-                proposals
-              </li>
-              <li>
-                MERN (Mongo DB, Express, React, Node), NodeMailer,
-                Render/Netlify hosting
-              </li>
+              <li>Languages:  HTML/CSS, JavaScript</li>
+              <li>Frontend:  Single Page Applications, React Vite</li>
+              <li>Backend:  Express, Node, Mongo DB</li>
+              <li>Frameworks:  Tailwind, Semantic UI, BootStrap, Contentful, SpringBoot</li>
+              <li>Hosting:  Netlify, Render, CloudFlare</li>
             </ul>
           </p>
-          <p>
-            <a href="https://www.kilwaadventures.com">
-              Kilwa Adventures & Watersports
-            </a>{" "}
-            - Multi-Page Website, Inquiries, Bookings, Contact
-          </p>
-          <ul>
-            <li>Original design logo & theme with Adobe Photoshop</li>
-            <li>Features tourism for community development emphasis</li>
-            <li>
-              Company owner login and edit pages to update pricing & specials
-            </li>
-            <li>
-              Booking form using Google Forms, populates Microsoft Excel sheet,
-              notifies company Gmail
-            </li>
-            <li>
-              SSL with CloudFlare, donation page with DonorBox (PayPal enabled)
-            </li>
-          </ul>
 
+          <h2>
+            Degrees & Certifications
+          </h2>
+          
+          <p>International Studies, BA, Aug 2019</p>
+          <p>World Arts, minor, Aug 2019</p>
+          <p>Jr Software Engineer, Sept 2024</p>
           <div
             style={{
               display: "inline-flex",
@@ -89,28 +64,14 @@ export default function Project5() {
             </div>
           </div>
 
-          <h1>Resume</h1>
+          <h1></h1>
           <p>
-            Oct 2023 - Present: Remote After Hours Supervisor for Private Senior
-            Care Company -{" "}
-            <a href="https://www.homeinstead.com/location/589/">Home Instead</a>
           </p>
           <ul>
-            <li>
-              On call evenings, weekends, holidays when home office is closed
-            </li>
-            <li>
-              Tracks calls & incidents using Microsoft Excel, Teams, Outlook,
-              and Google Voice
-            </li>
-            <li>
-              Manages caregiver & client schedules using WellSky Personal Care
-              software
-            </li>
           </ul>
 
           <p style={{ color: "gray", textAlign: "right", fontSize: "0.7em" }}>
-            <i>Updated 09/2024</i>
+            <i>Updated 01/2026</i>
           </p>
         </div>
       </div>

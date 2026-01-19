@@ -117,20 +117,21 @@ export default function ThemedHeader() {
             </h1>
             </div>
             <Nav />
-            <Button
+            <img
               onClick={() => {
                 navigate("/");
               }}
               style={{
                 border: "0px",
                 backgroundColor: "transparent",
+                width: "60px", 
+                height: "60px",
+                cursor: "pointer",
+                alignSelf: "center"
               }}
-            >
-              <img
-                src={HomeButton}
-                style={{ width: "60px", height: "60px" }}
-              ></img>
-            </Button>
+              src= {HomeButton}              
+              />
+            
         </>
       )}
 
