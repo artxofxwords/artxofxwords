@@ -9,9 +9,9 @@ import codebanditsGreen from "../../assets/graphicdesign/CodeBanditsgreen.png";
 import codebanditsGrey from "../../assets/graphicdesign/CodeBanditsgrey.png";
 import codebanditsOrange from "../../assets/graphicdesign/CodeBanditsorange.png";
 import lowandslow from "../../assets/graphicdesign/LowandSlowlogo.png";
-import circleknightcolor from "../../assets/graphicdesign/S611circlelogoknightcolorwhite";
-import circleskycolor from "../../assets/graphicdesign/S611circlelogoskycolorwhite";
-import circleknightwhite from "../../assets/graphicdesign/S611circlelogoknightwhitewhite";
+import circleknightcolor from "../../assets/graphicdesign/S611circlelogoknightcolorwhite.png";
+import circleskycolor from "../../assets/graphicdesign/S611circlelogoskycolorwhite.png";
+import circleknightwhite from "../../assets/graphicdesign/S611circlelogoknightwhitewhite.png";
 
 export default function Project2 () {
 
