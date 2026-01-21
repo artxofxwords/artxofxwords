@@ -9,6 +9,9 @@ import codebanditsGreen from "../../assets/graphicdesign/CodeBanditsgreen.png";
 import codebanditsGrey from "../../assets/graphicdesign/CodeBanditsgrey.png";
 import codebanditsOrange from "../../assets/graphicdesign/CodeBanditsorange.png";
 import lowandslow from "../../assets/graphicdesign/LowandSlowlogo.png";
+import circleknightcolor from "../../assets/graphicdesign/S611circlelogoknightcolorwhite";
+import circleskycolor from "../../assets/graphicdesign/S611circlelogoskycolorwhite";
+import circleknightwhite from "../../assets/graphicdesign/S611circlelogoknightwhitewhite";
 
 export default function Project2 () {
 
@@ -39,6 +42,11 @@ export default function Project2 () {
           </div>
           <div className="ui small circular images">
           <Image src={lowandslow} size="small" alt="Logo" wrapped/>
+          </div>
+          <div className="ui small circular images">
+          <Image src={circleknightcolor} size="small" alt="Logo" wrapped/>
+          <Image src={circleskycolor} size="small" alt="Logo" wrapped/>
+          <Image src={circleknightwhite} size="small" alt="Logo" wrapped/>
           </div>
         </div>
         </>
