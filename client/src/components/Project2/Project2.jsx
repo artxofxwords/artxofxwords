@@ -12,6 +12,9 @@ import lowandslow from "../../assets/graphicdesign/LowandSlowlogo.png";
 import circleknightcolor from "../../assets/graphicdesign/S611circlelogoknightcolorwhite.png";
 import circleskycolor from "../../assets/graphicdesign/S611circlelogoskycolorwhite.png";
 import circleknightwhite from "../../assets/graphicdesign/S611circlelogoknightwhitewhite.png";
+import cheerbasic from "../../assets/graphicdesign/CHEER-removebg-preview.png";
+import cheerannouncement from "../../assets/graphicdesign/CHEER-ANNOUNCEMENT-removebg-preview.png";
+import cheerschedule from "../../assets/graphicdesign/CHEER-SCHEDULE-removebg-preview.png";
 
 export default function Project2 () {
 
@@ -47,6 +50,11 @@ export default function Project2 () {
           <Image src={circleknightcolor} size="small" alt="Logo" wrapped/>
           <Image src={circleskycolor} size="small" alt="Logo" wrapped/>
           <Image src={circleknightwhite} size="small" alt="Logo" wrapped/>
+          </div>
+          <div className="ui small circular images">
+          <Image src={cheerbasic} size="small" alt="Logo" wrapped/>
+          <Image src={cheerannouncement} size="small" alt="Logo" wrapped/>
+          <Image src={cheerschedule} size="small" alt="Logo" wrapped/>
           </div>
         </div>
         </>
