@@ -27,24 +27,14 @@ export default function ThemedHeader() {
   //for welcome by input name
   const [guestName, setGuestName] = useState(localStorage.getItem("guestName"));
   const [nameForm, setNameForm] = useState(false);
-  const [editButton, setEditButton] = useState(true);
 
-  useEffect(() => {
-    if (nameForm === false) {
-      setEditButton(true);
-    } else {
-      setEditButton(false);
-      setTimeout(() => setNameForm(false), 5000);
-      stashGuestName();
-    }
-  }, [nameForm]);
+  function saveGuestName(e) {
+  e.preventDefault();
 
-  function stashGuestName() {
-    localStorage.removeItem("guestName");
+  localStorage.setItem("guestName", guestName);
 
-    setTimeout(() => localStorage.setItem("guestName", guestName), 5000);
-    setTimeout(() => localStorage.removeItem("guestName"), 100000);
-  }
+  setNameForm(false);
+}
 
   return (
     <div style={{ display: "inline-flex", flexDirection: "column", backgroundColor: "#ccf0f0" }}>
@@ -87,12 +77,12 @@ export default function ThemedHeader() {
             >
               HELLO {guestName}{" "}
               {nameForm && (
-                <form>
+                <form onSubmit={saveGuestName}>
                   <input
                     type="text"
                     id="guestName"
                     placeholder="name"
-                    value={guestName}
+                    value={guestName || ""}
                     onChange={(e) => setGuestName(e.target.value)}
                     style={{
                       width: "13vw",
@@ -103,7 +93,7 @@ export default function ThemedHeader() {
                   />
                 </form>
               )}{" "}
-              {editButton && (
+              {!nameForm && (
                 <Button
                   onClick={() => setNameForm(true)}
                   style={{
@@ -173,12 +163,12 @@ export default function ThemedHeader() {
             >
               HELLO {guestName}{" "}
               {nameForm && (
-                <form>
+                <form onSubmit={saveGuestName}>
                   <input
                     type="text"
                     id="guestName"
                     placeholder="name"
-                    value={guestName}
+                    value={guestName || ""}
                     onChange={(e) => setGuestName(e.target.value)}
                     style={{
                       width: "15vw",
@@ -189,7 +179,7 @@ export default function ThemedHeader() {
                   />
                 </form>
               )}{" "}
-              {editButton && (
+              {!nameForm && (
                 <Button
                   onClick={() => setNameForm(true)}
                   style={{

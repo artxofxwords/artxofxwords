@@ -51,11 +51,15 @@ export default function Project2 () {
           <Image src={circleskycolor} size="small" alt="Logo" wrapped/>
           <Image src={circleknightwhite} size="small" alt="Logo" wrapped/>
           </div>
-          <div className="ui small circular images">
+          <div className="ui small images">
           <Image src={cheerbasic} size="small" alt="Logo" wrapped/>
           <Image src={cheerannouncement} size="small" alt="Logo" wrapped/>
           <Image src={cheerschedule} size="small" alt="Logo" wrapped/>
           </div>
+
+          <div style={{
+            height: "40px"
+          }}></div>
         </div>
         </>
     )
